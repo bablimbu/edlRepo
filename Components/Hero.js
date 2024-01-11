@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Cards from './Cards'
+import Data from '../Data.js'
 
 // const navigation = [
 //   { name: 'Product', href: '#' },
@@ -16,7 +18,7 @@ export default function Hero() {
     <div className="bg-white">
       
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8 h-[100vh] flex flex-col items-center justify-center">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -72,6 +74,20 @@ export default function Hero() {
             }}
           />
         </div>
+      </div>
+      {/* Cards */}
+      <div className='p-5'>
+        <h2 className='text-6xl pb-2 text-center font-bold  ' >Unmatched value within your budget.</h2>
+        <p className='text-sm text-center'>Your success is our success, and we strive to make every penny count in elevating your digital presence, truly exemplifying value for money.</p>
+        </div>
+
+      <div className='w-full  flex justify-around p-5' >
+        {/* this all card data coming from Data.js  */}
+        {
+          Data.map((item)=>(<Cards icon={item.icon} title={item.Title} desc={item.desc}/>))
+        }
+
+        
       </div>
     </div>
   )
