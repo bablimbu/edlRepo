@@ -5,7 +5,7 @@ function Header() {
   return (
     <section>
         <Navbar/>
-        Our Navigation Section
+        
     </section>
   )
 }
