@@ -19,16 +19,16 @@ export default function Navbar() {
           >
             {/*      <!-- Brand logo --> */}
             
-            <a
+            <Link
               id="WindUI"
               aria-label="WindUI logo"
               aria-current="page"
-              className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
+              className="flex items-center font-normal gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               href="javascript:void(0)"
             >
              
-              Evo Design Labs 
-            </a>
+              Evo Design <span className="text-blue-900 font-bold">Labs</span>  
+            </Link>
             {/*      <!-- Mobile trigger --> */}
             <button
               className={`relative order-10 block h-10 w-10 self-center lg:hidden
