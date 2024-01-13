@@ -88,7 +88,7 @@ export default function Hero() {
       <div className='w-full  flex justify-around p-5 flex-wrap' >
         {/* this all card data coming from Data.js  */}
         {
-          JsonData.CardData.map((item)=>(<Cards icon={item.icon} title={item.Title} desc={item.desc}/>))
+          JsonData.CardData.map((item)=>(<Cards icon={item.icon} btnProps="hidden" title={item.Title} desc={item.desc}/>))
         }
 
         

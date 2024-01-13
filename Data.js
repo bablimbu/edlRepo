@@ -1,6 +1,18 @@
 import { MdAttachMoney } from "react-icons/md";
 import { RiLightbulbFlashFill } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
+import { MdWeb } from "react-icons/md";
+import { PiPaintBucketFill } from "react-icons/pi";
+import { BiSolidVideos } from "react-icons/bi";
+import { MdDesignServices } from "react-icons/md";
+import { RiPagesFill } from "react-icons/ri";
+import { SiMarketo } from "react-icons/si";
+
+
+
+
+
+
 
 
 
@@ -30,39 +42,45 @@ let CardData= [
 
 const Services=[
     {
-        "icon":"icon-1",
-        "title":"service1",
-        "desc":"desc1"
+        "icon":<MdWeb size={60}/>
+        ,
+        "title":"Web Development",
+        "desc":"Elevate your online presence with Evo Design Labs' dynamic and responsive web development solutions, tailored to your unique brand."
 
     },
     {
-        "icon":"icon-2",
-        "title":"service2",
-        "desc":"desc2"
+        "icon":<PiPaintBucketFill size={60} />
+        ,
+        "title":"Graphic Design",
+        "desc":"Captivate your audience with visually stunning graphics, meticulously crafted by Evo Design Labs to reflect and enhance your brand identity."
 
     },
     {
-        "icon":"icon-3",
-        "title":"service3",
-        "desc":"desc3"
+        "icon":<BiSolidVideos size={60} />
+        ,
+        "title":"Video Editing",
+        "desc":"Transform raw footage into compelling visual stories. Evo Design Labs adds cinematic flair, ensuring your videos leave a lasting impression."
 
     },
     {
-        "icon":"icon-4",
-        "title":"service4",
-        "desc":"desc4"
+        "icon":<MdDesignServices size={60} />
+        ,
+        "title":"Logo Design",
+        "desc":"Make a memorable first impression with Evo Design Labs' logo creation service. Craft a unique visual identity that resonates with your brand"
 
     },
     {
-        "icon":"icon-5",
-        "title":"service5",
-        "desc":"desc5"
+        "icon":<RiPagesFill size={60} />
+        ,
+        "title":"UI/UX Design",
+        "desc":"Ensure a seamless and delightful user experience with Evo Design Labs' UI/UX design expertise, blending functionality with aesthetic appeal."
 
     },
     {
-        "icon":"icon-6",
-        "title":"service6",
-        "desc":"desc6"
+        "icon":<SiMarketo size={60} />
+        ,
+        "title":"Digital Marketing",
+        "desc":"Amplify your online presence and reach your target audience effectively with Evo Design Labs' strategic and results-driven digital marketing solutions."
 
     }
 ]
