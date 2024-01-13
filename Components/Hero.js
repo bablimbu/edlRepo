@@ -1,8 +1,12 @@
 import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// import { Dialog } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Cards from './Cards'
-import Data from '../Data.js'
+import JsonData from '@/Data'
+import Services from './Services'
+
+
+
 
 // const navigation = [
 //   { name: 'Product', href: '#' },
@@ -12,7 +16,7 @@ import Data from '../Data.js'
 // ]
 
 export default function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div className="bg-white">
@@ -34,10 +38,10 @@ export default function Hero() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
+              Announcing new offers.{' '}
               <a href="#" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
+                Checkout <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
@@ -77,18 +81,23 @@ export default function Hero() {
       </div>
       {/* Cards */}
       <div className='p-5'>
-        <h2 className='text-6xl pb-2 text-center font-bold  ' >Unmatched value within your budget.</h2>
+        <h2 className='text-6xl pb-2 text-center font-bold max-sm:text-4xl ' >Unmatched value within your budget.</h2>
         <p className='text-sm text-center'>Your success is our success, and we strive to make every penny count in elevating your digital presence, truly exemplifying value for money.</p>
         </div>
 
-      <div className='w-full  flex justify-around p-5' >
+      <div className='w-full  flex justify-around p-5 flex-wrap' >
         {/* this all card data coming from Data.js  */}
         {
-          Data.map((item)=>(<Cards icon={item.icon} title={item.Title} desc={item.desc}/>))
+          JsonData.CardData.map((item)=>(<Cards icon={item.icon} title={item.Title} desc={item.desc}/>))
         }
 
         
       </div>
+      <div>
+        
+        <Services/>
+      </div>
+      
     </div>
   )
 }

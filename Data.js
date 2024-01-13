@@ -1,5 +1,4 @@
-import { MdAttachMoney, MdDesignServices } from "react-icons/md";
-import { FcIdea } from "react-icons/fc";
+import { MdAttachMoney } from "react-icons/md";
 import { RiLightbulbFlashFill } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
 
@@ -29,7 +28,48 @@ let CardData= [
     }
 ]
 
+const Services=[
+    {
+        "icon":"icon-1",
+        "title":"service1",
+        "desc":"desc1"
 
-export default (
-    CardData
+    },
+    {
+        "icon":"icon-2",
+        "title":"service2",
+        "desc":"desc2"
+
+    },
+    {
+        "icon":"icon-3",
+        "title":"service3",
+        "desc":"desc3"
+
+    },
+    {
+        "icon":"icon-4",
+        "title":"service4",
+        "desc":"desc4"
+
+    },
+    {
+        "icon":"icon-5",
+        "title":"service5",
+        "desc":"desc5"
+
+    },
+    {
+        "icon":"icon-6",
+        "title":"service6",
+        "desc":"desc6"
+
+    }
+]
+
+
+let JsonData={CardData,Services}
+
+export default  (
+    JsonData
 )

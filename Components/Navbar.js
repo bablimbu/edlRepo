@@ -1,7 +1,11 @@
+"use client"
 import React, { useState } from "react"
+import Link from "next/link"
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
+  
+  
 
   return (
     <>
@@ -35,7 +39,7 @@ export default function Navbar() {
                 }
               `}
               onClick={() => setIsToggleOpen(!isToggleOpen)}
-              aria-expanded={isToggleOpen ? "true" : "false"}
+              aria-expanded={isToggleOpen ? "true"  : "false"}
               aria-label="Toggle navigation"
             >
               <div className="absolute top-1/2 left-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform">
@@ -74,15 +78,15 @@ export default function Navbar() {
                 </a>
               </li>
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
                   role="menuitem"
                   aria-current="page"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  href="/service"
                 >
-                  <span>Services</span>
-                </a>
+                 <span>Services </span>
+                </Link>
               </li>
               <li role="none" className="flex items-stretch">
                 <a
@@ -99,9 +103,12 @@ export default function Navbar() {
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(3)"
+                  href="javascript:void(0)"
+                  
                 >
-                  <span>About</span>
+                  <span>
+                    
+                    About</span>
                 </a>
               </li>
             </ul>
