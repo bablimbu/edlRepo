@@ -68,14 +68,14 @@ export default function Navbar() {
               }`}
             >
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300  text-emerald-500 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  href="/"
                 >
                   <span>Home</span>
-                </a>
+                </Link>
               </li>
               <li role="none" className="flex items-stretch">
                 <Link
@@ -89,27 +89,27 @@ export default function Navbar() {
                 </Link>
               </li>
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  href="/works"
                 >
-                  <span>Pricing</span>
-                </a>
+                  <span>Our Works</span>
+                </Link>
               </li>
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  href="/about"
                   
                 >
                   <span>
                     
                     About</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
